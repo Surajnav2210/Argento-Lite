@@ -1,0 +1,18 @@
+{
+  "tickers": [
+    "EEM",
+    "EFA",
+    "GLD",
+    "IEF",
+    "IWM",
+    "QQQ",
+    "SMH",
+    "SPY",
+    "TLT",
+    "VNQ",
+    "XLE",
+    "XLK"
+  ],
+  "start": "1993-01-01",
+  "end": "2026-09-30"
+}

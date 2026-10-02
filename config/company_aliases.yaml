@@ -1,0 +1,31 @@
+# aliases: share classes and cross-listings that map to one company.
+# non_company: fund or cash holdings, ignored in exposure.
+
+aliases:
+  GOOGL:     {key: ALPHABET,  name: "Alphabet"}
+  GOOG:      {key: ALPHABET,  name: "Alphabet"}
+  BRK-B:     {key: BERKSHIRE, name: "Berkshire Hathaway"}
+  BRK.B:     {key: BERKSHIRE, name: "Berkshire Hathaway"}
+  BRK-A:     {key: BERKSHIRE, name: "Berkshire Hathaway"}
+  FOXA:      {key: FOX,       name: "Fox Corp"}
+  FOX:       {key: FOX,       name: "Fox Corp"}
+  NWSA:      {key: NEWSCORP,  name: "News Corp"}
+  NWS:       {key: NEWSCORP,  name: "News Corp"}
+  005930.KQ: {key: SAMSUNG,   name: "Samsung Electronics"}
+  005930.KS: {key: SAMSUNG,   name: "Samsung Electronics"}
+  "005935":  {key: SAMSUNG,   name: "Samsung Electronics"}
+  005935.KS: {key: SAMSUNG,   name: "Samsung Electronics"}
+  TSM:       {key: TSMC,      name: "Taiwan Semiconductor Manufacturing"}
+  2330.TW:   {key: TSMC,      name: "Taiwan Semiconductor Manufacturing"}
+  ASML:      {key: ASML,      name: "ASML Holding"}
+  ASML.AS:   {key: ASML,      name: "ASML Holding"}
+  BABA:      {key: ALIBABA,   name: "Alibaba Group"}
+  9988.HK:   {key: ALIBABA,   name: "Alibaba Group"}
+  SHEL:      {key: SHELL,     name: "Shell"}
+  SHEL.L:    {key: SHELL,     name: "Shell"}
+  AZN:       {key: ASTRAZENECA, name: "AstraZeneca"}
+  AZN.L:     {key: ASTRAZENECA, name: "AstraZeneca"}
+
+non_company:
+  - VRTPX    # Vanguard Real Estate II Index fund (inside VNQ)
+  - XTSLA    # BlackRock Cash Funds Treasury (inside IWM)

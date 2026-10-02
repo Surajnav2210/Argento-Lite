@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argento-lite"
+version = "0.1.0"
+description = "Educational re-implementation of the public Argento portfolio-construction methodology on ETFs."
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "yfinance>=0.2.40",
+    "pyarrow>=15",
+    "pydantic>=2.6",
+    "pyyaml>=6",
+    "plotly>=5.20",
+    "streamlit>=1.35",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]

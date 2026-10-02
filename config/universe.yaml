@@ -1,0 +1,20 @@
+# ETFs stand in for model portfolios. min_investment values are hypothetical.
+# history_start drops earlier prices; SMH starts at the VanEck relaunch because Yahoo's
+# earlier history belongs to a different fund.
+
+price_start: "1993-01-01"
+price_end: "2026-09-30"   # fixed end date for reproducible fetches
+
+etfs:
+  - {ticker: SPY, name: "SPDR S&P 500",                   min_investment: 5000}
+  - {ticker: QQQ, name: "Invesco QQQ (Nasdaq-100)",       min_investment: 10000}
+  - {ticker: IWM, name: "iShares Russell 2000",           min_investment: 15000}
+  - {ticker: EFA, name: "iShares MSCI EAFE",              min_investment: 10000}
+  - {ticker: EEM, name: "iShares MSCI Emerging Markets",  min_investment: 20000}
+  - {ticker: TLT, name: "iShares 20+ Year Treasury",      min_investment: 15000}
+  - {ticker: IEF, name: "iShares 7-10 Year Treasury",     min_investment: 5000}
+  - {ticker: GLD, name: "SPDR Gold Shares",               min_investment: 10000}
+  - {ticker: XLE, name: "Energy Select Sector SPDR",      min_investment: 25000}
+  - {ticker: VNQ, name: "Vanguard Real Estate",           min_investment: 20000}
+  - {ticker: XLK, name: "Technology Select Sector SPDR",  min_investment: 30000}
+  - {ticker: SMH, name: "VanEck Semiconductor",           min_investment: 40000, history_start: "2011-12-20"}

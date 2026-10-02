@@ -1,0 +1,20 @@
+# Illustrative policy constants. Plutus withholds its real values.
+# These numbers are for an educational prototype only.
+
+ANNUALIZATION_FACTOR: 252
+RECENT_WINDOW_DAYS: 252
+ALPHA_POS: 0.25          # recency weight for improvement
+ALPHA_NEG: 0.50          # recency weight for deterioration (must be > ALPHA_POS)
+MIN_PORTFOLIO_COMPONENTS: 1
+MAX_PORTFOLIO_COMPONENTS: 3
+WEIGHT_STEP: 0.10
+MIN_COMPONENT_WEIGHT: 0.10
+ALLOWED_CASH_WEIGHTS: [0.0, 0.10]   # cash only in multi-portfolio packages; cash-only prohibited
+CASH_HURDLE: 0.04         # annual
+CASH_VOLATILITY: 0.0
+RISK_LEVEL_COUNT: 10
+RISK_SCALE_MIN: 0.04      # annualized volatility
+RISK_SCALE_MAX: 0.24
+FRONTIER_TOLERANCE: 1.0e-9
+ACCOUNT_AMOUNTS: [10000, 25000, 50000, 100000, 250000]
+CONCENTRATION_CAP: 0.10   # max look-through exposure to any single company (extension)

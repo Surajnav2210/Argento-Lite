@@ -1,0 +1,82 @@
+:root {
+  --navy: #111D32;
+  --cream: #F7F4EE;
+  --line: rgba(17, 29, 50, 0.15);
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+.hero h1, .hero p, .eyebrow, .section,
+[data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li,
+[data-testid="stMarkdownContainer"] h4, [data-testid="stTab"] p, [data-testid="stMetric"] *,
+[data-testid="stSidebar"] label p, [data-testid="stCaptionContainer"] p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.stApp { color: var(--navy); }
+.block-container { max-width: 1080px; padding-top: 2.5rem; }
+
+.stAppDeployButton { display: none; }
+[data-testid="stHeader"] { background: transparent; }
+
+p, li, [data-testid="stMarkdownContainer"] { font-weight: 300; color: var(--navy); }
+
+.hero {
+  background: var(--navy);
+  border-radius: 8px;
+  padding: 3rem 3rem 2.6rem;
+  margin-bottom: 0.75rem;
+}
+.hero .eyebrow { color: rgba(255, 255, 255, 0.7); }
+.hero h1 {
+  font-weight: 300;
+  font-size: 2.9rem;
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+  color: #fff;
+  margin: 0.8rem 0 1rem;
+  padding: 0;
+}
+.section em { font-family: var(--serif) !important; font-weight: 400; font-style: italic; }
+.hero p { color: rgba(255, 255, 255, 0.78); font-size: 1.05rem; max-width: 40rem; margin: 0; }
+
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.section { font-weight: 300; font-size: 1.8rem; letter-spacing: -0.05em; margin: 0.4rem 0 0.8rem; color: var(--navy); }
+
+[role="tablist"] { gap: 1.6rem; border-bottom: 1px solid var(--line); }
+[data-testid="stTab"] p {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+[data-testid="stMetric"] {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+}
+[data-testid="stMetricLabel"] p {
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+[data-testid="stMetricValue"] { font-weight: 300; letter-spacing: -0.04em; }
+
+[data-testid="stSidebar"] { border-right: 1px solid var(--line); }
+[data-testid="stSidebar"] label p { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+
+[data-testid="stDataFrame"], [data-testid="stPlotlyChart"] {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+[data-testid="stCaptionContainer"] { color: var(--navy); font-weight: 300; }
