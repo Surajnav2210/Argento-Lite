@@ -1,5 +1,7 @@
 # Argento-Lite
 
+Live app: https://argento-lite.streamlit.app/
+
 A rebuild of the portfolio-construction method Plutus describes publicly as Argento (Argento: Risk-Reward
 Portfolio Construction, public edition, August 2026), run on 12 public ETFs, plus one idea of my own: what
 would a single-company cap cost?
