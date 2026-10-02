@@ -15,7 +15,8 @@
 .stApp { color: var(--navy); }
 .block-container { max-width: 1080px; padding-top: 2.5rem; }
 
-.stAppDeployButton { display: none; }
+.stAppDeployButton, [data-testid="stToolbar"], [data-testid="stToolbarActions"],
+[data-testid="stMainMenu"], [data-testid="stDecoration"], #MainMenu { display: none !important; }
 [data-testid="stHeader"] { background: transparent; }
 
 p, li, [data-testid="stMarkdownContainer"] { font-weight: 300; color: var(--navy); }
